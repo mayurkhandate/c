@@ -43,7 +43,7 @@ int main(){
         printf("\n \t\t Result \t\t: FAIL \n");
     }
 
-    printf("\n\n---------------------- Thank you ---------------------\n\n");
+    printf("\n\n---------------------- Thank you -----------------------\n\n");
 
 
     return 0;
