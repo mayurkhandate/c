@@ -5,6 +5,7 @@ int main(){
     char sname[10];
     int sub1,sub2,sub3;
     float per;
+    char gr;
 
     printf("\n Enter Roll no :");
     scanf("%d", &rno);
@@ -28,15 +29,17 @@ int main(){
 
     if(sub1 >= 40 && sub2 >=40 && sub3 >= 40){
         printf("\n \t\t Result \t\t: PASS \n");
+
         if(per >= 40 && per <= 50){
-            printf("\n \t\t Grade \t\t\t: C \n");
+            gr = 'C';
         }
         else if (per >= 51 && per <= 75){
-            printf("\n \t\t Grade \t\t\t: B \n");
+            gr = 'B';
         }
        else if (per >= 76 && per <= 100){
-            printf("\n \t\t Grade \t\t\t: A \n");
+            gr = 'A';
        }
+        printf("\n \t\t Grade \t\t\t: %c \n",gr);
        
     }
     else{
