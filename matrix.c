@@ -2,11 +2,11 @@
 #define max 20
 
 int main(){
-    int mat1[max][max],mat2[max][max],mat3[max][max],mat4[max][max];
+    int mat1[max][max],mat2[max][max],mat3[max][max],mat4[max][max],mat5[max][max];
     int r1,c1,i,j,r2,c2;
     int ch,ch2;
     do{
-        printf("\n 1. Create matrix \n 2. Display matrix \n 3. Addition of Matrix \n 4. Multliplication of Matrix \n");
+        printf("\n 1. Create matrix \n 2. Display matrix \n 3. Addition of Matrix \n 4. Multliplication of Matrix \n 5. Transpose \n");
         printf("\n Enter your choice : ");
         scanf("%d",&ch);
         switch (ch)
@@ -42,7 +42,7 @@ int main(){
 
         case 2:
 
-            printf("\n 1. Matrix display \n 2. Matrix Addition \n 3. Matrix Mulitplication \n ");
+            printf("\n 1. Matrix display \n 2. Matrix Addition \n 3. Matrix Mulitplication \n 4. Transpose");
             printf("\n Enter your choice : ");
             scanf("%d", &ch2);
 
@@ -85,6 +85,16 @@ int main(){
                     printf("\n");
                 }
             break;
+
+            case 4:
+                printf("\n\n -------------- Matrix Transpose----------- \n\n");
+                for(i = 0; i < r1; i++){
+                    for(j = 0; j < c1; j++){
+                        printf("%5d",mat5[i][j]);
+                    }
+                    printf("\n");
+                }
+            break;
             
             default:
                 printf("\n INVALID CHOICE ");
@@ -93,6 +103,7 @@ int main(){
         break;
 
         case 3: 
+            // Matrix Addition logic
             if(mat1[r1][c1] == mat2[r2][c2]){
                 for(i = 0; i < r1; i++){
                     for(j = 0; j < c1; j++){
@@ -105,6 +116,7 @@ int main(){
         
 
         case 4: 
+            // Matrix Multiplication logic
             if(mat1[r1][c1] == mat2[r2][c2]){
                 for(i = 0; i < r1; i++){
                     for(j = 0; j < c1; j++){
@@ -112,6 +124,16 @@ int main(){
                     }
                     printf("\n");
                 }
+            }
+        break;
+
+        case 5: 
+            // Matrix Transpose logic
+            for(i = 0; i < r1; i++){
+                for(j = 0; j < c1; j++){
+                    mat5[i][j] = mat1[j][i];
+                }
+                printf("\n");
             }
         break;
 
@@ -125,7 +147,6 @@ int main(){
     }
     while (ch == 1);
         printf("\n\n ------------Thank you-----------\n\n");
-    
 
     return 0;
 }
