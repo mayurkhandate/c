@@ -10,6 +10,10 @@ int main(){
         printf("\n Entered char is a vowel ");
     }
 
+    else if(ca =='A' || ca == 'E' || ca == 'I' || ca == 'O' || ca == 'U'){
+        printf("\n Entered char is a vowel");
+    }
+
     else{
         printf("\n Entered char is other char");
     }
