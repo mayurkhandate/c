@@ -80,7 +80,7 @@ int main(){
                             goto payment;
                         }
                         else{
-                            printf("\n Enter correct amount");
+                            printf("\n Enter correct amount ");
                         }
                     break;
 
@@ -91,7 +91,7 @@ int main(){
                             goto payment;
                         }
                         else{
-                            printf("\n Enter correct amount");
+                            printf("\n Enter correct amount ");
                         }
                     break;
 
@@ -109,7 +109,7 @@ int main(){
 
             case 2:
                 // display plan
-                printf("\n\n--------------Display plan ----------------\n\n");
+                printf("\n\n-------------- Display plan ----------------\n\n");
                 printf("\n 1.Prepaid plan \n 2. Postpaid plan \n");
                 printf("\n Enter your choice : ");
                 scanf("%d",&ch);
@@ -175,17 +175,17 @@ int main(){
 
             case 3:
                 // calculate bill
-                printf("\n\n -------------Transaction Details--------------\n\n");
+                printf("\n\n ------------- Transaction Details --------------\n\n");
                 cgst = amount * 0.06;
                 sgst = amount * 0.06;
                 bill = amount + cgst +sgst;
-                printf("\n \t\t Name \t\t\t : %s ",name);
-                printf("\n \t\t Mobile number \t\t : %d ",mobile_number);
-                printf("\n \t\t Transaction Type \t : VISA");
-                printf("\n \t\t Amountb Paid \t\t : %d ",amount);
-                printf("\n \t\t CGST \t\t\t : %d ",cgst);
-                printf("\n \t\t SGST \t\t\t : %d ",sgst);
-                printf("\n \t\t Total Bill \t\t : %d ",bill);
+                printf("\n \t\t Name \t\t\t : %s \n",name);
+                printf("\n \t\t Mobile number \t\t : %d \n",mobile_number);
+                printf("\n \t\t Transaction Type \t : VISA \n");
+                printf("\n \t\t Amountb Paid \t\t : %d \n",amount);
+                printf("\n \t\t CGST \t\t\t : %d \n",cgst);
+                printf("\n \t\t SGST \t\t\t : %d \n",sgst);
+                printf("\n \t\t Total Bill \t\t : %d \n\n",bill);
             break;
             
             default:
