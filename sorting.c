@@ -7,7 +7,7 @@ int main(){
 
     do
     {
-        printf("\n 1.Create Array \n 2.Display Array \n 3.Sort Array \n 4.Search \n");
+        printf("\n 1.Create Array \n 2.Display Array \n 3.Sort Array \n 4.Search \n 5.Insertion \n 6.Delete \n");
         printf("\n Enter your choice : ");
         scanf("%d",&ch);
 
@@ -24,6 +24,7 @@ int main(){
         break;
 
         case 2:
+            // display
             for(i = 0; i < n; i++){
                 printf("\t %d ",a[i]);
             }
@@ -59,13 +60,21 @@ int main(){
                 printf("\n Elemnent not found ");
             }
         break;
+
+        case 5:
+            // inserting
+        break;
+
+        case 6:
+        // delete 
+        break;
         
         default:
             printf("\n INVALID OPTION");
         break;
         }
 
-        printf("\n Enter 1 to continue : ");
+        printf("\n Enter 1 to continue : "); 
         scanf("%d",&ch);
     } while (ch == 1);
         printf("\n------Thank you---------");    
