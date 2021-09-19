@@ -5,10 +5,12 @@ int main(){
     int mat1[max][max],mat2[max][max],mat3[max][max],mat4[max][max],mat5[max][max];
     int r1,c1,i,j,r2,c2;
     int ch,ch2;
+
     do{
         printf("\n 1. Create matrix \n 2. Display matrix \n 3. Addition of Matrix \n 4. Multliplication of Matrix \n 5. Transpose \n");
         printf("\n Enter your choice : ");
         scanf("%d",&ch);
+
         switch (ch)
         {
         case 1:
@@ -41,66 +43,23 @@ int main(){
         break;
 
         case 2:
-
-            printf("\n 1. Matrix display \n 2. Matrix Addition \n 3. Matrix Mulitplication \n 4. Transpose");
-            printf("\n Enter your choice : ");
-            scanf("%d", &ch2);
-
-            switch (ch2)
-            {
-            case 1:
-                printf("\n\n -------------Matrix 1------------- \n\n");
-                for(i = 0; i < r1; i++){
-                    for(j = 0; j < c1; j++){
-                        printf("%5d",mat1[i][j]);
-                    }
-                    printf("\n");
+        // display of matrix 1 and 2
+            printf("\n\n -------------Matrix 1------------- \n\n");
+            for(i = 0; i < r1; i++){
+                for(j = 0; j < c1; j++){
+                    printf("%5d",mat1[i][j]);
                 }
-
-                printf("\n\n -------------Matrix 2------------- \n\n");
-                for(i = 0; i < r1; i++){
-                    for(j = 0; j < c1; j++){
-                        printf("%5d",mat2[i][j]);
-                    }
-                    printf("\n");
-                }
-                break;
-
-            case 2:
-                printf("\n\n ------------Matrix Addition-------- \n\n");
-                for(i = 0; i < r1; i++){
-                    for(j = 0; j < c1; j++){
-                        printf("%5d",mat3[i][j]);
-                    }
-                    printf("\n");
-                }
-            break;
-
-            case 3:
-                 printf("\n\n -------------- Matrix Multiplication----------- \n\n");
-                for(i = 0; i < r1; i++){
-                    for(j = 0; j < c1; j++){
-                        printf("%5d",mat4[i][j]);
-                    }
-                    printf("\n");
-                }
-            break;
-
-            case 4:
-                printf("\n\n -------------- Matrix Transpose----------- \n\n");
-                for(i = 0; i < r1; i++){
-                    for(j = 0; j < c1; j++){
-                        printf("%5d",mat5[i][j]);
-                    }
-                    printf("\n");
-                }
-            break;
-            
-            default:
-                printf("\n INVALID CHOICE ");
-            break;
+                printf("\n");
             }
-        break;
+
+            printf("\n\n -------------Matrix 2------------- \n\n");
+            for(i = 0; i < r1; i++){
+                for(j = 0; j < c1; j++){
+                    printf("%5d",mat2[i][j]);
+                }
+                printf("\n");
+            }
+         break;
 
         case 3: 
             // Matrix Addition logic
@@ -108,12 +67,12 @@ int main(){
                 for(i = 0; i < r1; i++){
                     for(j = 0; j < c1; j++){
                         mat3[i][j] = mat1[i][j] + mat2[i][j];
+                        printf("%5d",mat3[i][j]);
                     }
                     printf("\n");
                 }
             }
         break;
-        
 
         case 4: 
             // Matrix Multiplication logic
@@ -121,6 +80,7 @@ int main(){
                 for(i = 0; i < r1; i++){
                     for(j = 0; j < c1; j++){
                         mat4[i][j] = mat1[i][j] * mat2[i][j];
+                        printf("%5d",mat4[i][j]);
                     }
                     printf("\n");
                 }
@@ -132,6 +92,7 @@ int main(){
             for(i = 0; i < r1; i++){
                 for(j = 0; j < c1; j++){
                     mat5[i][j] = mat1[j][i];
+                    printf("%5d",mat5[i][j]);
                 }
                 printf("\n");
             }
