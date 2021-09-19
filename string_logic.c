@@ -47,8 +47,23 @@ int main(){
             printf("\n Upper Case ---> %s ",string);
         break;
 
+        case 4:
+            // pallindrome string half correct
+            printf("\n Enter String 1 : ");
+            scanf("%s",&s1);
+
+            printf("\n Enter String 2: ");
+            scanf("%s",&s2);
+
+            for (i = s1[i]; i > s1[i] !=; i++)
+            {
+                
+            }
+            
+        break;
+
         case 5:
-        // concat
+        // concat half correct
             printf("\n Enter your string 1: ");
             scanf("%s",&s1);
             printf("\n Enter your string 2: ");
@@ -57,8 +72,6 @@ int main(){
             printf("\n String 1 : %s \n",s1);
             printf("\n String 2 : %s \n",s2);
 
-            // concat = s1 + s2;
-            // printf("\n concat string 1 and string 2 : %s \n",(s1 + s2));
             
         break;
 
@@ -83,12 +96,26 @@ int main(){
             }
         break;
         
+        case 7:
+        // string copy
+        printf("\n Enter String 1 : ");
+        scanf("%s",&s1);
+        for (i = 0; s1[i] != '\0'; i++)
+        {
+            s2[i] = s1[i];
+        }
+        
+        printf("Copy String : %s \n", s2);
+        break;
+
         default:
             printf("\n INVALID OPTION ");
          break;
         }
-    printf("\n Enter 1 to continue : ");
+
+    printf("\n Enter 1 to continue : \n");
     scanf("%d",&ch);
+
     }while (ch == 1);
 
     return 0;
