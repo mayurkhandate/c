@@ -1,7 +1,7 @@
 #include<stdio.h>
 #define max 20
 int main(){
-    int ch,i,j,n;
+    int ch,i,j,n,flag = 1;
     char string[max];
     char s1[max],s2[max],concat[max];
     do{
@@ -49,15 +49,26 @@ int main(){
 
         case 4:
             // pallindrome string half correct
-            printf("\n Enter String 1 : ");
+            printf("\n Enter String to check pallindrome : ");
             scanf("%s",&s1);
-
-            printf("\n Enter String 2: ");
-            scanf("%s",&s2);
-
-            for (i = s1[i]; i > s1[i] !=; i++)
+            int l;
+            for(i = 0; i < s1[i] != '\0';i++);
+            
+            
+            for (j = 0; j < i; j++ ,i--)
             {
-                
+                if(s1[i] != s1[j])
+                {
+                    flag == 0;
+                    break;
+                }
+            
+            }
+            if(flag == 1){
+                printf("\n Enter String is a pallindrome");
+            }
+            else{
+                printf("\n Enter string is not a pallindrome");
             }
             
         break;
