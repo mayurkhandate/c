@@ -65,11 +65,8 @@ int main(){
 
 
 
-
-
 /*
-# mylib logic 
-
+#mylib
 int stringLen(char string[]){
     int i;
     for(i = 0; i < string[i] != '\0';i++);
@@ -93,21 +90,27 @@ int stringPallindrome(char string[]){
 }
 
 void stringReverse(char string[]){   
-    int i,n;
+    int j,i,n=0;
     
     // size of string
-    for(i = 0; string[i] != '\0';i++);
-
-    // Reverse string
-    int j=0;
-    for(n = i-1; j < n; j++,n--){
-       char c = string[n];
-       string[n]=string[j];
-       string[j]=c;
-    }  
-
+    for(i = 0; string[i] != '\0';i++);  
+    
+    for(j = i-1; j > n; j--,n++){
+        char c = string[j];
+        string[j] = string[n];
+        string[n] = c;
+    }
+    
 }
 
 
 
+
 */
+
+
+
+
+
+
+
