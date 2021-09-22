@@ -1,36 +1,30 @@
 #include <stdio.h>
 #define max 20
+
 int main()
 {
-    int a[20], n, item, i;
+    int a[20] ,n,j,temp;
 
-    printf("Enter the size of the array");
-
+    printf("\n Enter the size of the array : ");
     scanf("%d", &n);
 
-    printf("Enter elements of the array ");
+    printf("\n Enter elements of the array : ");
 
-    for (i = 0; i < n; i++)
-
+    for (int i = 0; i < n; i++)
     {
         scanf("%d", &a[i]);
-        for(int j = 1; j < n-1; j++){
-            if(a[i] > a[j]){
-                
-            }
+        temp =a[i];
+        j = i-1;
+        while (a[j] > temp && j >= 0)
+        {
+            a[j+1] = a[j];
+            j--;
         }
+        a[j+1] = temp;
+        
     }
-
-
-    
-
-   
-
-    for (i = 0; i < n; i++)
-
-    {
-
-        printf("\n \t %d", a[i]);
+    for(int i = 0; i < n ; i++){
+        printf("\t %d ", a[i]);
     }
 
     return 0;
