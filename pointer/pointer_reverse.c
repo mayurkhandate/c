@@ -19,7 +19,6 @@ char * stringReverse(char string[]){
 }
 
 int main(){
-
     char string[30];
     
     printf("\n Enter your string : ");

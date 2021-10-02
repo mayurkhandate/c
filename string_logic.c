@@ -48,7 +48,7 @@ int main(){
         break;
 
         case 4:
-            // pallindrome string half correct
+            // pallindrome string 
             printf("\n Enter String to check pallindrome : ");
             scanf("%s",&s1);
             int l;
@@ -74,7 +74,7 @@ int main(){
         break;
 
         case 5:
-        // concat half correct
+        // concat 
             printf("\n Enter your string 1: ");
             scanf("%s",&s1);
             printf("\n Enter your string 2: ");
@@ -83,6 +83,13 @@ int main(){
             printf("\n String 1 : %s \n",s1);
             printf("\n String 2 : %s \n",s2);
 
+            for(int i = 0; s1[i] != '\0'; i++);
+
+            for(int j = 0; s2[j] != '\0'; i++,j++){
+                s1[i] = s2[j];
+            }
+
+            printf("\n Concat of string : %s \n",s1);
             
         break;
 
