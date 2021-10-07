@@ -1,6 +1,6 @@
 /*
  Write a program to print most duplicate characters in a string? 
- Input = "aaaaa aaaa aaaaaaaab bbbcddd deeeeee" Output = Most duplicate character is 'a' 
+ Input = "aaaaaaaaaaaaaaaaabbbbcddddeeeeee" Output = Most duplicate character is 'a' 
  and count is <<no. of times a occurs>>
 */
 
